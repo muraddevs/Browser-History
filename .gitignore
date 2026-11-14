@@ -1,0 +1,85 @@
+# ─── AI assistant / agent files ─────────────────────────────
+# Claude / Claude Code
+CLAUDE.md
+CLAUDE.local.md
+**/CLAUDE.md
+**/CLAUDE.local.md
+.claude/
+.claudeignore
+.mcp.json
+
+# Cursor
+.cursor/
+.cursorrules
+.cursorignore
+.cursorindexingignore
+
+# GitHub Copilot
+.github/copilot-instructions.md
+.copilot/
+
+# Windsurf / Codeium
+.windsurf/
+.windsurfrules
+.codeium/
+
+# Aider
+.aider*
+
+# Continue
+.continue/
+.continuerc.json
+
+# Cline / Roo
+.cline/
+.clinerules
+.roo/
+.roomodes
+
+# OpenAI Codex / generic agent files
+AGENTS.md
+**/AGENTS.md
+.codex/
+GEMINI.md
+.gemini/
+.ai/
+.llm/
+*.prompt.md
+
+# ─── OS / editor ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# ─── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ─── Java ───────────────────────────────────────────────────
+*.class
+out/
+target/
+build/
+
+# ─── C / C++ ────────────────────────────────────────────────
+*.o
+*.obj
+*.exe
+*.out
+cmake-build-*/
+
+# ─── JavaScript / Node ──────────────────────────────────────
+node_modules/
+dist/
+
+# ─── Deliverables (submitted separately, not tracked) ───────
+*.zip
+*.mp4
