@@ -1,8 +1,5 @@
-"""Menu-driven driver for BrowserHistory.
-
-Run:  python3 main.py              (capacity 50)
-      python3 main.py --capacity 5 (small capacity, handy for showing pruning)
-"""
+# menu program for the browser history
+# run: python3 main.py  (or python3 main.py --capacity 5 to see pruning faster)
 
 import argparse
 
@@ -52,8 +49,8 @@ def show_current(browser):
     print(f"Position:   {page['position']} of {page['total']}")
 
 
+# runs one menu option, returns False when the user wants to quit
 def handle(choice, browser):
-    """Run one menu choice. Returns False when the user wants to quit."""
     if choice == "0":
         return False
     if choice == "1":

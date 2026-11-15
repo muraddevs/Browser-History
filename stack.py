@@ -1,17 +1,14 @@
+# one item in the stack, it only needs to know the item below it
 class _StackNode:
-    """One item in the stack. It only needs a link to the item below it."""
 
     def __init__(self, value, below=None):
         self.value = value
         self.below = below
 
 
+# simple LIFO stack made with a singly linked list, push/pop/peek are all O(1)
+# we use it to keep deleted pages so the last deleted one is restored first
 class Stack:
-    """LIFO stack built on a singly linked list. push, pop and peek are O(1).
-
-    Used by BrowserHistory to keep deleted pages so the most recently
-    deleted one can be restored first.
-    """
 
     def __init__(self):
         self._top = None
@@ -24,7 +21,7 @@ class Stack:
         return self._size == 0
 
     def push(self, value):
-        # The new item sits on top of the old top.
+        # new item goes on top of the old top
         self._top = _StackNode(value, self._top)
         self._size += 1
 
@@ -46,8 +43,8 @@ class Stack:
         self._top = None
         self._size = 0
 
+    # goes from the top (last pushed) down to the bottom
     def __iter__(self):
-        """Yield items from the top (most recent) down to the bottom (oldest)."""
         current = self._top
         while current is not None:
             yield current.value
