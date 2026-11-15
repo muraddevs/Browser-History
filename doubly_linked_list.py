@@ -129,6 +129,15 @@ class DoublyLinkedList:
             index += 1
         raise ValueError("Node is not in this list")
 
+    def contains(self, node):
+        # Compares by identity, so two pages with the same URL are different nodes.
+        current = self.head
+        while current is not None:
+            if current is node:
+                return True
+            current = current.next
+        return False
+
     # For testing
     def is_consistent(self):
         if self._size == 0:
