@@ -81,5 +81,6 @@ node_modules/
 dist/
 
 # ─── Deliverables (submitted separately, not tracked) ───────
+submission/
 *.zip
 *.mp4

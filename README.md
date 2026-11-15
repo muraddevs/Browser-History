@@ -7,11 +7,12 @@ implemented from scratch (no built-in linked list or deque containers).
 
 ## Team
 
+Group 10
+
 | Name | Student ID |
 |------|------------|
-|      |            |
-|      |            |
-|      |            |
+| Murad Aghamirzayev | 17488 |
+| Nurchin Mammadli | 19764 |
 
 ## Required operations
 
